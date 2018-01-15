@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="utf-8">
     <title>Return to Venice</title>
@@ -16,23 +16,24 @@
 
     <nav>
         <ul class="main-menu">
-            <li><a href="file:///D:/EPAM/PROJECT/Project/index.html?#1">MAIN PAGE</a></li>
-            <li id="first-sub-menu"><a href="#2">ABOUT US</a>
+            <li><a href="index.html">MAIN PAGE</a></li>
+            <li id="first-sub-menu"><a>ABOUT US</a>
                 <ul id="first-menu">
-                    <li><a href="#3">ABOUT THE RESTAURANT</a></li>
-                    <li><a href="#4">HISTORY OF THE RESTAURANT</a></li>
-                    <li><a href="#5">OUR COOKS</a></li>
-                    <li><a href="#6">PHOTOGALLERY</a></li>
+                    <li><a href="#about-the-restaurant">ABOUT THE RESTAURANT</a></li>
+                    <li><a href="#history-of-the-restaurant">HISTORY OF THE RESTAURANT</a></li>
+                    <li><a href="#our-cooks">OUR COOKS</a></li>
+                    <li><a href="#our-events">OUR EVENTS</a></li>
                 </ul>
             </li>
-            <li id="second-sub-menu"><a href="#7">MENU</a>
+            <li id="second-sub-menu"><a>MENU</a>
                 <ul id="second-menu">
-                    <li><a href="#8">FOOD</a></li>
-                    <li><a href="#9">DRINKS</a></li>
+                    <li><a href="menu.html#food-menu">FOOD</a></li>
+                    <li><a href="menu.html#drink-menu">DRINKS</a></li>
                 </ul>
             </li>
-            <li><a href="#10">RESERVE A TABLE</a></li>
-            <li><a href="#11">CONTACT</a></li>
+            <li><a href="reserve.html#reserve-table">RESERVE A TABLE</a></li>
+            <li><a href="photogallery.html#photogallery-title">PHOTOGALERRY</a></li>
+            <li><a href="contacts.html">CONTACT</a></li>
         </ul>
     </nav>
 
@@ -53,12 +54,8 @@
 
         <!---Buttons-->
 
-        <a href="">
-            <button class="reserve-button-desktop">RESERVE</button>
-        </a>
-        <a href="">
-            <button class="menu-button-desktop">MENU</button>
-        </a>
+        <a href="reserve.html#reserve-table" class="reserve-button-desktop">RESERVE</a>
+        <a href="menu.html" class="menu-button-desktop">MENU</a>
 
         <!--Name of the restaurant-->
 
@@ -68,16 +65,16 @@
 
         <div id="slider">
             <div id="sliderImj">
-                <div><img src="images/1.jpg" alt="View from the restaurant" class="image"></div>
-                <div><img src="images/2.jpg" alt="View from the restaurant" class="image"></div>
-                <div><img src="images/3.jpg" alt="Venice" class="image"></div>
-                <div><img src="images/4.jpg" alt="Wine" class="image"></div>
-                <div><img src="images/5.jpg" alt="Night Venice" class="image"></div>
-                <div><img src="images/6.jpg" alt="In a restaurant" class="image"></div>
-                <div><img src="images/7.jpg" alt="In a restaurant" class="image"></div>
-                <div><img src="images/8.jpg" alt="Venice" class="image"></div>
-                <div><img src="images/9.jpg" alt="Food" class="image"></div>
-                <div><img src="images/10.jpg" alt="In a restaurant" class="image"></div>
+                <div class="b"><img src="images/1.jpg" alt="View from the restaurant" class="image"></div>
+                <div class="b"><img src="images/2.jpg" alt="View from the restaurant" class="image"></div>
+                <div class="b"><img src="images/3.jpg" alt="Venice" class="image"></div>
+                <div class="b"><img src="images/4.jpg" alt="Wine" class="image"></div>
+                <div class="b"><img src="images/5.jpg" alt="Night Venice" class="image"></div>
+                <div class="b"><img src="images/6.jpg" alt="In a restaurant" class="image"></div>
+                <div class="b"><img src="images/7.jpg" alt="In a restaurant" class="image"></div>
+                <div class="b"><img src="images/8.jpg" alt="Venice" class="image"></div>
+                <div class="b"><img src="images/9.jpg" alt="Food" class="image"></div>
+                <div class="b"><img src="images/10.jpg" alt="In a restaurant" class="image"></div>
             </div>
 
         </div>
@@ -97,25 +94,25 @@
 
     <div id="menu-breadcrumbs">
         <ul id="breadcrumbs">
-            <li><a href="">Home</a></li>
-            <li><a href="">Our menu</a></li>
-            <li><a href="">Food</a></li>
-            <li><a href="">Drinks</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Our menu</a></li>
+            <li><a href="menu.html#food-menu">Food</a></li>
+            <li><a href="menu.html#drink-menu">Drinks</a></li>
         </ul>
     </div>
 
 
     <div class="content">
 
-        <h1>The best Italian food in Venice!</h1>
+        <h1 id="about-us">The best Italian food in Venice!</h1>
 
-        <h2>About the restaurant</h2>
+        <h2 id="about-the-restaurant">About the restaurant</h2>
         <p>RETURN TO VENICE is a quite, comfy restaurant located in the center of Venice. RETURN TO VENICE invites you
             to be pampered by our monthly wine dinners, private dining for your next event (business or pleasure),
             complete catering services and our delectable five-course meals served tableside. At RETURN TO VENICE, we
             pride ourselves in the care we give to each of our guests. From our impeccable service to our exquisite
             authentic Italian cuisine we guarantee you a wonderful dining experience. Make your reservation today.</p>
-        <h2>History of the restaurant</h2>
+        <h2 id="history-of-the-restaurant">History of the restaurant</h2>
         <p>The restaurant was opened in Venice in 2005 by Mr. Fabrizio Valdo and managed by his son Lucio.
             Anciently an old venetian “osteria” complete of vineyard, this restaurant has preserved its style and
             quality in preparring traditional dishes.
@@ -126,7 +123,7 @@
             This location in the heart of old town near the “Rialto Bridge“ encourages the procurement of raw material
             freshness due to its proximity to the fish market and fruit and vegetables, carefully worked.</p>
 
-        <h2>Our cooks</h2>
+        <h2 id="our-cooks">Our cooks</h2>
 
         <div class="cooks">
             <div class="image-cook">
@@ -163,23 +160,28 @@
             </div>
         </div>
 
+        <!---Events-->
+
+        <h2 id="our-events">Our events</h2>
+
+        <div id="events"></div>
+
+
         <!---Buttons-->
 
-        <a href="">
-            <button class="menu-button">MENU</button>
-        </a>
-        <a href="">
-            <button class="reserve-button">RESERVE</button>
-        </a>
+        <div class="mobile-buttons">
+            <a href="menu.html" class="menu-button">MENU</a>
+            <a href="reserve.html#reserve-table" class="reserve-button">RESERVE</a>
+        </div>
 
     </div>
-
 
     <!--Footer-->
 
     <div class="footer">
         <div>
-            <p>If you would like regular updates about events and goings-on at RETURN TO VENICE <strong><a href="#11">sign
+            <p>If you would like regular updates about events and goings-on at RETURN TO VENICE <strong><a
+                    href="contacts.html#form-paragraph">sign
                 up</a></strong> to our
                 newsletter.</p>
             <p>S. Marco, 2159, 30133 Venice, Italy;· +39 041 577 5533</p>
@@ -187,11 +189,32 @@
         <div>
             <p>&copy;COPYRIGHT 2017. ALL RIGHTS RESERVED. WEBSITE POWERED BY TETIANA OSADCHA.</p>
             <p class="mail"><a href="mailto:reservations@retovenice.com">WRITE US</a></p>
+
+            <!--Share Buttons-->
+
+            <ul class="share-buttons">
+                <li><a href="https://www.facebook.com/sharer/sharer.php?u=&quote=" title="Share on Facebook"
+                       target="_blank"><img alt="Share on Facebook" src="images/Facebook.png"/></a></li>
+                <li><a href="https://twitter.com/intent/tweet?source=&text=:%20" target="_blank" title="Tweet"><img
+                        alt="Tweet" src="images/Twitter.png"/></a></li>
+                <li><a href="https://plus.google.com/share?url=" target="_blank" title="Share on Google+"><img
+                        alt="Share on Google+" src="images/Google+.png"/></a></li>
+                <li><a href="http://www.linkedin.com/shareArticle?mini=true&url=&title=&summary=&source="
+                       target="_blank" title="Share on LinkedIn"><img alt="Share on LinkedIn"
+                                                                      src="images/LinkedIn.png"/></a></li>
+                <li><a href="mailto:?subject=&body=:%20" target="_blank" title="Send email"><img alt="Send email"
+                                                                                                 src="images/Email.png"/></a>
+                </li>
+            </ul>
+
         </div>
+
+
     </div>
 
 </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 <script src="js/script.js"></script>
+<script src="js/events.js"></script>
 </body>
 </html>

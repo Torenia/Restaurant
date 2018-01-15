@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="utf-8">
     <title>Return to Venice</title>
@@ -16,23 +16,24 @@
 
     <nav>
         <ul class="main-menu">
-            <li><a href="file:///D:/EPAM/PROJECT/Project/index.html?#1">MAIN PAGE</a></li>
-            <li id="first-sub-menu"><a href="#2">ABOUT US</a>
+            <li><a href="index.html">MAIN PAGE</a></li>
+            <li id="first-sub-menu"><a>ABOUT US</a>
                 <ul id="first-menu">
-                    <li><a href="#3">ABOUT THE RESTAURANT</a></li>
-                    <li><a href="#4">HISTORY OF THE RESTAURANT</a></li>
-                    <li><a href="#5">OUR COOKS</a></li>
-                    <li><a href="#6">PHOTOGALLERY</a></li>
+                    <li><a href="index.html#about-the-restaurant">ABOUT THE RESTAURANT</a></li>
+                    <li><a href="index.html#history-of-the-restaurant">HISTORY OF THE RESTAURANT</a></li>
+                    <li><a href="index.html#our-cooks">OUR COOKS</a></li>
+                    <li><a href="index.html#our-events">OUR EVENTS</a></li>
                 </ul>
             </li>
-            <li id="second-sub-menu"><a href="#7">MENU</a>
+            <li id="second-sub-menu"><a>MENU</a>
                 <ul id="second-menu">
-                    <li><a href="#8">FOOD</a></li>
-                    <li><a href="#9">DRINKS</a></li>
+                    <li><a href="menu.html#food-menu">FOOD</a></li>
+                    <li><a href="menu.html#drink-menu">DRINKS</a></li>
                 </ul>
             </li>
-            <li><a href="#10">RESERVE A TABLE</a></li>
-            <li><a href="#11">CONTACT</a></li>
+            <li><a href="#reserve-table">RESERVE A TABLE</a></li>
+            <li><a href="photogallery.html#photogallery">PHOTOGALERRY</a></li>
+            <li><a href="contacts.html">CONTACT</a></li>
         </ul>
     </nav>
 
@@ -51,14 +52,9 @@
                 <span>Email:</span><br> reservations@retovenice.com</p>
         </div>
 
-        <!---Buttons-->
+        <!---Button-->
 
-        <a href="">
-            <button class="reserve-button-desktop">RESERVE</button>
-        </a>
-        <a href="">
-            <button class="menu-button-desktop">MENU</button>
-        </a>
+        <a href="menu.html" class="menu-button-desktop">MENU</a>
 
         <!--Name of the restaurant-->
 
@@ -95,56 +91,71 @@
 
     <!--Reserve a table-->
 
-    <h1 class="title">Reserve a table</h1>
+    <h1 class="title" id="reserve-table">Reserve a table</h1>
 
-        <div class="reserve">
+    <div class="reserve">
 
-    <div class="table-selection">
+        <div class="table-selection">
 
-    <div class="scheme">
-        <img src="images/Tables-scheme.jpg" alt="scheme">
-    </div>
-
-        <div class="table first" data-table="0">
-        </div>
-        <div class="table second" data-table="1">
-        </div>
-        <div class="table third" data-table="2">
-        </div>
-        <div class="table fourth">
-        </div>
-        <div class="table fifth">
-        </div>
-        <div class="table sixth">
-        </div>
-        <div class="table seventh">
-        </div>
-        <div class="table eighth">
-        </div>
-        <div class="table ninth">
-        </div>
-        <div class="table tenth">
-        </div>
-        <div class="table eleventh horizontal">
-        </div>
-        <div class="table twelfth horizontal">
-        </div>
-        <div class="table thirteenth horizontal">
-        </div>
-
-    </div>
-
-            <div id="reserve-the-table">
-                <div id="free-time">Free at:</div>
-
-                    Name:
-                    <input type="text" name="reserve-from" id="name">
-                    Phone:
-                    <input type="text" name="reserve-to" id="phone">
-
-                    <button id="table-reserve">Reserve</button>
+            <div class="scheme">
+                <img src="images/Tables-scheme.jpg" alt="scheme">
             </div>
 
+            <div class="title-scheme">Please select a table</div>
+
+            <div class="table first" data-table="0">
+            </div>
+            <div class="table second" data-table="1">
+            </div>
+            <div class="table third" data-table="2">
+            </div>
+            <div class="table fourth" data-table="3">
+            </div>
+            <div class="table fifth" data-table="4">
+            </div>
+            <div class="table sixth" data-table="5">
+            </div>
+            <div class="table seventh" data-table="6">
+            </div>
+            <div class="table eighth" data-table="7">
+            </div>
+            <div class="table ninth" data-table="8">
+            </div>
+            <div class="table tenth" data-table="9">
+            </div>
+            <div class="table eleventh horizontal" data-table="10">
+            </div>
+            <div class="table twelfth horizontal" data-table="11">
+            </div>
+            <div class="table thirteenth horizontal" data-table="12">
+            </div>
+
+        </div>
+
+        <div id="reserve-the-table">
+            <div id="free-time">Free at:<br></div>
+
+            Name:
+            <input type="text" name="reserve-from" id="name">
+            <div class="relative-input">
+                Phone:
+                <input type="text" name="reserve-to" id="phone">
+                <div>
+                    <button id="table-reserve" onclick="showModalWindow()">Reserve</button>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- The modal window -->
+        <div id="modal-window" class="modal">
+
+            <!-- modal window content -->
+
+            <div class="modal-content">
+                <span class="close" onclick="closeModalWindow();">&times;</span>
+                <p id="response"></p>
+            </div>
 
         </div>
 
@@ -152,32 +163,50 @@
     </div>
 
 
-    <!---Buttons-->
+    <!---Button-->
 
-    <a href="">
-        <button class="menu-button">MENU</button>
-    </a>
-    <a href="">
-        <button class="reserve-button">RESERVE</button>
-    </a>
-
-</div>
-
-
-<!--Footer-->
-
-<div class="footer">
-    <div>
-        <p>If you would like regular updates about events and goings-on at RETURN TO VENICE <strong><a href="#11">sign
-            up</a></strong> to our
-            newsletter.</p>
-        <p>S. Marco, 2159, 30133 Venice, Italy;· +39 041 577 5533</p>
+    <div class="mobile-buttons">
+        <a href="menu.html" class="menu-button">MENU</a>
     </div>
-    <div>
-        <p>&copy;COPYRIGHT 2017. ALL RIGHTS RESERVED. WEBSITE POWERED BY TETIANA OSADCHA.</p>
-        <p class="mail"><a href="mailto:reservations@retovenice.com">WRITE US</a></p>
+
+
+    <!--Footer-->
+
+    <!--Footer-->
+
+    <div class="footer">
+        <div>
+            <p>If you would like regular updates about events and goings-on at RETURN TO VENICE <strong><a
+                    href="contacts.html#form-paragraph">sign
+                up</a></strong> to our
+                newsletter.</p>
+            <p>S. Marco, 2159, 30133 Venice, Italy;· +39 041 577 5533</p>
+        </div>
+        <div>
+            <p>&copy;COPYRIGHT 2017. ALL RIGHTS RESERVED. WEBSITE POWERED BY TETIANA OSADCHA.</p>
+            <p class="mail"><a href="mailto:reservations@retovenice.com">WRITE US</a></p>
+
+            <!--Share Buttons-->
+
+            <ul class="share-buttons">
+                <li><a href="https://www.facebook.com/sharer/sharer.php?u=&quote=" title="Share on Facebook"
+                       target="_blank"><img alt="Share on Facebook" src="images/Facebook.png"/></a></li>
+                <li><a href="https://twitter.com/intent/tweet?source=&text=:%20" target="_blank" title="Tweet"><img
+                        alt="Tweet" src="images/Twitter.png"/></a></li>
+                <li><a href="https://plus.google.com/share?url=" target="_blank" title="Share on Google+"><img
+                        alt="Share on Google+" src="images/Google+.png"/></a></li>
+                <li><a href="http://www.linkedin.com/shareArticle?mini=true&url=&title=&summary=&source="
+                       target="_blank" title="Share on LinkedIn"><img alt="Share on LinkedIn"
+                                                                      src="images/LinkedIn.png"/></a></li>
+                <li><a href="mailto:?subject=&body=:%20" target="_blank" title="Send email"><img alt="Send email"
+                                                                                                 src="images/Email.png"/></a>
+                </li>
+            </ul>
+
+        </div>
+
+
     </div>
-</div>
 
 </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>

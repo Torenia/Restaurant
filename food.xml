@@ -1,0 +1,106 @@
+<?xml version="1.0"?>
+<menu>
+    <food>
+        <menu-section>
+            <name>Appetizers</name>
+            <composition prise="€ 26,00">Selection of typical venetian cicchetti
+            </composition>
+            <composition prise="€ 24,00">Fall’s vegetables and fruits,
+                mustard mayonnaise and Parmesan waffles
+            </composition>
+            <composition prise="€ 28,00">Veal salad with new potatoes, mango,
+                soy sprouts and Taggiasca olives
+            </composition>
+            <composition prise="€ 28,00">Codfish and extravirgin olive oil,
+                violet artichokes, almond milk and anchovies
+            </composition>
+            <composition prise="€ 34,00">Beef tartare with herbs salad and black truffle
+            </composition>
+            <composition prise="€ 30,00">Roasted scallops, orange glazed pumpkin and chicory
+            </composition>
+        </menu-section>
+
+        <menu-section>
+            <name>First Courses</name>
+            <composition prise="€ 28,00">“Grumolo delle Abbadesse” risotto of the day</composition>
+            <composition prise="€ 26,00">Linguine with turnip greens, mussels and Pecorino cheese
+            </composition>
+            <composition prise="€ 26,00">Chestnut flour bigoli pasta with duck ragout and vegetables
+            </composition>
+            <composition prise="€ 26,00">Taleggio cheese Ravioli
+                with soft Jerusalem artichokes cream and gingerbread
+            </composition>
+            <composition prise="€ 30,00">Fresh ricotta cheese gnocchi
+                with scampi, porcini mushrooms and kale
+            </composition>
+            <composition prise="€ 22,00">Cereals and legumes soup
+            </composition>
+        </menu-section>
+
+        <menu-section>
+            <name>Fish and Meat</name>
+            <composition prise="€ 38,00">Stewed red mullet with cauliflower cream,
+                crunchy chickpeas polenta, lemon and coriander
+            </composition>
+            <composition prise="€ 40,00">Seabass filet with black salsify gratin,
+                anchovies and garlic dip “bagna cauda” and aromatic salad
+            </composition>
+            <composition prise="€ 42,00">Saffron fish and crustaceans soup
+            </composition>
+            <composition prise="€ 38,00">Braised veal cheek with savoy cabbage,
+                smoked potatoes cream and caramelized apples
+            </composition>
+            <composition prise="€ 40,00">Beef filet in a marrow crust,
+                late-growing radicchio and wild mushrooms
+            </composition>
+        </menu-section>
+
+        <menu-section>
+            <name>Bauer Signature Dish</name>
+            <composition prise="€ 34,00">Veal liver Venetian style
+                with grilled biancoperla corn flour polenta
+            </composition>
+        </menu-section>
+
+        <menu-section>
+            <name>Vegetables</name>
+            <composition prise="€ 16,00">Black truffle potatoes gateaux
+            </composition>
+            <composition prise="€ 15,00">Late-growing radicchio and beans casserole
+            </composition>
+            <composition prise="€ 16,00">Mushrooms and grilled polenta
+            </composition>
+        </menu-section>
+
+        <menu-section>
+            <name>Cheese</name>
+            <composition prise="€ 16,00">Our goat cheese selection
+            </composition>
+        </menu-section>
+
+        <menu-section>
+            <name>Dessert</name>
+            <composition prise="€ 14,00">Guanaja dark chocolate cake, pineapple and coffee
+            </composition>
+            <composition prise="€ 15,00">Soft chestnut cookie with fiordilatte ice cream and cognac
+            </composition>
+            <composition prise="€ 14,00">Goat milk custard cream, citrus fruits, tangerine and mint sorbet
+            </composition>
+            <composition prise="€ 15,00">Pears with Colmello di Grotta Cabernet Franc and
+            pomegranate ice cream
+            </composition>
+            <composition prise="€ 12,00">Tiramisù
+            </composition>
+            <composition prise="€ 14,00">Seasonal fresh fruit
+            </composition>
+            <composition prise="€ 15,00">Ice cream and sorbet
+            </composition>
+            <composition prise="€ 20,00">“Caffè Gourmand”
+                Espresso coffee served with special desserts selection
+            </composition>
+        </menu-section>
+
+    </food>
+
+</menu>
+

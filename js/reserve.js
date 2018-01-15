@@ -4,19 +4,16 @@ function addReserveTimes(timeArray) {
 
     for (i = 0; i < timeArray.length; i++) {
         var timeForReserve = document.getElementById("free-time");
-        var divTime =  document.createElement("div");
         var time = document.createElement("p");
-        timeForReserve.appendChild(divTime);
-        divTime.appendChild(time);
-        divTime.classList.add("divTime");
+        timeForReserve.appendChild(time);
         var reserveTime = document.createTextNode(timeArray[i]);
         time.appendChild(reserveTime);
         time.classList.add("time");
         var timeCheckbox = document.createElement("input");
-        timeCheckbox.classList.add("checkbox");
         timeCheckbox.setAttribute("type", "checkbox");
         timeCheckbox.setAttribute("value", i);
         time.appendChild(timeCheckbox);
+        timeCheckbox.classList.add("checkbox");
     }
 }
 
@@ -24,22 +21,25 @@ var selectedTable;
 
 $(".table").on("click", loadTable);
 
+
 function loadTable(evt) {
-    $.ajax({
+    $.ajax({ url: "http://localhost:1337/table/" + $(evt.target).attr("data-table") + "/?timestamp=" + Date.now(),
         type: "GET",
-        url: "http://localhost:1337/table/" + $(evt.target).attr("data-table"),
+
         dataType: "json",
         success: function (json) {
             addReserveTimes(json);
         },
 
-        error: function () {
-            console.error("Server error");
+        error: function (error) {
+            console.error("Server error ");
         }
     });
     $(".time").remove();
     selectedTable = $(evt.target).attr("data-table");
-};
+    $(".table").removeClass("table-color");
+    $(evt.target).toggleClass("table-color");
+}
 
 
 function selectedCheckbox() {
@@ -52,24 +52,69 @@ $("#table-reserve").on("click", reserveTime);
 
 function reserveTime() {
 
-    $.ajax({
-        url: "http://localhost:1337/reserve/",
-        method: "POST",
+    var x = $("#name").val();
+    var y = $("#phone").val();
+    var checkboxes = document.querySelectorAll('input:checked');
+    if (selectedTable == null) {
+        $("#response").html("Please select a table and reserve time");
+        return false;
+    }
+    else if (checkboxes.length == 0) {
+        $("#response").html("Please reserve time");
+        return false;
+    }
+    else if ((x == null || x == "") && (y == null || y == "")) {
+        $("#response").html("Please enter your name and phone number!");
+        return false;
+    }
+    else if (x == null || x == "") {
+        $("#response").html("Please enter your name!");
+        return false;
+    }
+    else if (y == null || y == "") {
+        $("#response").html("Please enter your phone number!");
+        return false;
+    }
+    else {
+        $.ajax({
+            url: "http://localhost:1337/reserve/",
+            method: "POST",
 
-        data: JSON.stringify({
-            checked: selectedCheckbox(),
-            name: $("#name").val(),
-            phone: $("#phone").val(),
-            tableNumber: selectedTable
-        }),
-        success: function (succesResponse) {
-            alert(succesResponse);
+            data: JSON.stringify({
+                checked: selectedCheckbox(),
+                name: $("#name").val(),
+                phone: $("#phone").val(),
+                tableNumber: selectedTable
+            }),
+            success: function (succesResponse) {
+                $("#response").html(succesResponse);
+            },
+            error: function () {
+                alert("Server error");
+            }
 
-        },
-        error: function () {
-            alert("Server error");
-        }
-
-    });
+        });
+    }
 }
+
+
+//Modal window
+
+var modal = document.getElementById("modal-window");
+
+function showModalWindow() {
+    modal.style.display = "block";
+}
+
+function closeModalWindow() {
+    modal.style.display = "none";
+}
+
+window.onclick = function (event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+
+
 

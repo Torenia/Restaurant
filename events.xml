@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<events>
+
+    <event>
+        <caption>Join us for Events at the Restaurant</caption>
+        <description>You’re part of our family, and family should eat together! Return to Venice brings
+            our guests together for events in our restaurant and garden that feature unique wine
+            and beer pairings, Chef inspired multi-course meals, and meals in support of charity efforts.
+        </description>
+    </event>
+    <event>
+        <caption>Social events and business lunch in our restaurant</caption>
+        <description>Our long experience in organizing events, our specialized service, our stylish spaces
+            and professionalism gives you all the guarantees for the success of your event, every day in our restaurant.
+            We also have available a space for 35 persons, which we can turn into a private, a la carte, to accommodate
+            your social or professional events.
+        </description>
+    </event>
+    <event>
+        <caption>Business</caption>
+        <description>Return to Venice is ideal for corporate events. We are particularly attractive
+            for international clients. The bar area (a separate room) can be adapted for presentations
+            or any other needs you may have. If required we can use our website to publicise your function,
+            whether it be a product launch, staff night or networking event.
+        </description>
+    </event>
+    <event>
+        <caption>Weddings</caption>
+        <description>Return to Venice is a unique wedding venue and perfect for smaller weddings.
+            Spectacular views over the sea, combined with ample natural light, ensures a truly romantic ambiance and an
+            unforgettable day.
+            When you get married with us at Return to Venice our venue is yours for the entire day.
+            Our wedding coordinator will work with you and go the extra mile to ensure your wedding is as special as it
+            can possibly be. We offer a selection of menu choices to ensure all your guests needs are catered for.
+            Return to Venice can cater for seated wedding parties of up to 50 guests (with room for more evening guests
+            as required), making it the ideal choice for an intimate and special wedding.
+        </description>
+    </event>
+    <event>
+        <caption>Music and Dance</caption>
+        <description>Dance the night away with live music or one of our concert venues, or if you prefer our D.J. is
+            always playing the best dance music around. Bring your friends for a fun filled evening belting out the
+            latest hits during karaoke night, or laugh for hours at one of our comedy shows. Don’t miss your favorite
+            entertainers, check our calendar to see our upcoming shows. Open Friday and Saturdays.
+        </description>
+    </event>
+
+</events>
+

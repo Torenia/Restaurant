@@ -65,6 +65,6 @@ function showPage(n) {
         paginationButtons[i].className = paginationButtons[i].className.replace(" active", "");
     }
     pages[pageIndex - 1].style.display = "block";
-    paginationButtons[pageIndex-1].className += " active";
+    paginationButtons[pageIndex - 1].className += " active";
 }
 
