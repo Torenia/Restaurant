@@ -42,7 +42,7 @@ body {
 .main-menu a {
     display: block;
     padding: 7px 0;
-    color: #fff;
+    color: #FFF;
     text-decoration: none;
 }
 
@@ -51,7 +51,7 @@ body {
 }
 
 .main-menu li:hover {
-    background: rgb(152, 135, 153);
+    background: #988799;
 
 }
 
@@ -82,7 +82,7 @@ body {
 
     .main-menu ul a {
         border-bottom: 2px solid #e5e5e5;
-        background: rgb(175, 158, 176);
+        background: #AF9EB0;
     }
 
 }
@@ -125,10 +125,10 @@ body {
 
 .contacts {
     width: 10%;
-    padding: 0.5em;
+    padding: .5em;
     position: absolute;
     font-family: 'Kanit', sans-serif;
-    font-size: 0.7em;
+    font-size: .7em;
     top: 10%;
 }
 
@@ -154,7 +154,7 @@ body {
     border-radius: 3%;
     background: linear-gradient(to left, #a57d7b, #af9eb0, #af9eb0);
     font-family: 'Kanit', sans-serif;
-    color: #FFFFFF;
+    color: #FFF;
     text-shadow: #580c77 0 0 4px;
     cursor: pointer;
     outline: none;
@@ -193,7 +193,7 @@ body {
 }
 
 .reserve-button-desktop:hover {
-    background: rgb(152, 135, 153);
+    background: #988799;
 }
 
 .menu-button-desktop {
@@ -201,7 +201,7 @@ body {
 }
 
 .menu-button-desktop:hover {
-    background: rgb(152, 135, 153);
+    background: #988799;
 }
 
 /*NAME*/
@@ -216,7 +216,7 @@ body {
     z-index: 100;
     font-size: 3em;
     font-family: 'Fredoka One', cursive;
-    color: white;
+    color: #FFF;
 }
 
 /*SLIDER*/
@@ -273,7 +273,7 @@ body {
     width: 7.5em;
     height: 2.5em;
     transition: all .2s ease-out;
-    padding: 0 0.5em 0 0.5em;
+    padding: 0 .5em 0 .5em;
     background-image: url("../images/search.png");
     background-repeat: no-repeat;
     background-position: 100% 50%, 100% 100%;
@@ -315,7 +315,7 @@ body {
 }
 
 #breadcrumbs {
-    margin: 0.7em;
+    margin: .7em;
     padding: 0;
     list-style: none;
     font-size: 2.5em;
@@ -326,10 +326,10 @@ body {
 }
 
 #breadcrumbs a {
-    padding: 0.3em 1em 0.3em 2em;
+    padding: .3em 1em .3em 2em;
     float: left;
     text-decoration: none;
-    color: white;
+    color: #FFF;
     position: relative;
     background: linear-gradient(to left, #a57d7b, #af9eb0, #af9eb0);
 }
@@ -340,7 +340,7 @@ body {
 }
 
 #breadcrumbs a:hover {
-    background: rgb(152, 135, 153);
+    background: #988799;
 }
 
 #breadcrumbs a::after,
@@ -348,21 +348,21 @@ body {
     content: "";
     position: absolute;
     top: 49%;
-    margin-top: -0.9em;
-    border-top: 0.95em solid transparent;
-    border-left: 0.85em solid;
-    border-bottom: 0.95em solid transparent;
+    margin-top: -.9em;
+    border-top: .95em solid transparent;
+    border-left: .85em solid;
+    border-bottom: .95em solid transparent;
 }
 
 #breadcrumbs a::after {
     z-index: 2;
     border-left-color: #a57d7b;
-    right: -0.8em;
+    right: -.8em;
 }
 
 #breadcrumbs a::before {
     border-left-color: #D1CDD2;
-    right: -0.9em;
+    right: -.9em;
     z-index: 1;
 }
 
@@ -439,7 +439,7 @@ body {
     }
 
     .content h1 {
-        margin-top: 0em;
+        margin-top: 0;
     }
 
     .cooks {
@@ -451,8 +451,8 @@ body {
     }
 
     .image-cook {
-        margin: 0em .2em;
-        font-size: 0.8em;
+        margin: 0 .2em;
+        font-size: .8em;
     }
 }
 
@@ -463,12 +463,12 @@ body {
     width: 95%;
     margin: 3em auto;
     display: block;
-    font-size: 0.76em;
+    font-size: .76em;
 }
 
 .footer div p {
-    padding: 0.2em;
-    margin: 0.3em 0.5em;
+    padding: .2em;
+    margin: .3em .5em;
 }
 
 .footer strong a {
@@ -477,7 +477,7 @@ body {
 
 .footer div p .mail {
     margin-left: 4%;
-    font-size: 0.7em;
+    font-size: .7em;
 }
 
 @media (max-width: 1023px) {
@@ -500,7 +500,7 @@ body {
 
     .footer div p {
         margin: 0 0;
-        padding: 0.1em 1em;
+        padding: .1em 1em;
         font-size: 1.3em;
     }
 }
@@ -589,8 +589,8 @@ ul.share-buttons .sr-only {
 
     .photogallery .photo-container {
         display: inline-block;
-        margin: 0.5em;
-        padding: 0.4em;
+        margin: .5em;
+        padding: .4em;
         overflow: hidden;
         width: 300px;
         height: 300px;
@@ -614,11 +614,11 @@ ul.share-buttons .sr-only {
 .pagination-button {
     background: linear-gradient(to left, #a57d7b, #877988, #928193);
     font-family: 'Kanit', sans-serif;
-    color: #FFFFFF;
+    color: #FFF;
     text-shadow: #580c77 0 1px 2px;
     font-size: 2.5em;
     padding: 8px 16px;
-    border: 1px solid #ddd;
+    border: 1px solid #DDD;
     border-radius: 10%;
 }
 
@@ -656,7 +656,7 @@ ul.share-buttons .sr-only {
     }
 
     .pagination div {
-        margin: 0em;
+        margin: 0;
     }
 
     .number-page {
@@ -703,7 +703,7 @@ ul.share-buttons .sr-only {
     font-family: 'Kanit', sans-serif;
     font-size: 3.2em;
     color: #6d4e4e;
-    text-shadow: #400b55 0 0.5px 0.5px;
+    text-shadow: #400b55 0 .5px .5px;
     padding: 8px;
 }
 
@@ -713,7 +713,7 @@ ul.share-buttons .sr-only {
     background: #dbc5dc;
     position: absolute;
     cursor: pointer;
-    opacity: 0.5;
+    opacity: .5;
 }
 
 .table:hover {
@@ -722,7 +722,7 @@ ul.share-buttons .sr-only {
 
 .table-color {
     background-color: #EEB2B2;
-    opacity: 0.7;
+    opacity: .7;
 }
 
 .table.first {
@@ -798,7 +798,7 @@ ul.share-buttons .sr-only {
 #reserve-the-table,
 #reserve-the-table button {
     font-family: 'Kanit', sans-serif;
-    color: #FFFFFF;
+    color: #FFF;
     text-shadow: #580c77 0 1px 2px;
     border-radius: 2%;
     padding: 1% 2%;
@@ -820,7 +820,7 @@ ul.share-buttons .sr-only {
     float: right;
     margin-top: 10%;
     transform: scale(3);
-    opacity: 0.9;
+    opacity: .9;
     cursor: pointer;
 }
 
@@ -829,7 +829,7 @@ ul.share-buttons .sr-only {
     display: block;
     border-radius: 5%;
     width: 90%;
-    font-size: 0.8em;
+    font-size: .8em;
     float: none;
     margin-top: 1%;
     transform: none;
@@ -854,7 +854,7 @@ ul.share-buttons .sr-only {
     display: inline-block;
     margin: 1%;
     width: 43%;
-    font-size: 0.8em;
+    font-size: .8em;
     padding: 1.7%;
     text-align: center;
     border: solid 1px #79687a;
@@ -893,7 +893,7 @@ ul.share-buttons .sr-only {
 
     #reserve-the-table input {
         transform: scale(1.5);
-        opacity: 0.9;
+        opacity: .9;
         cursor: pointer;
         margin-top: 8%;
     }
@@ -905,9 +905,9 @@ ul.share-buttons .sr-only {
     }
 
     .time {
-        margin: 0.5%;
+        margin: .5%;
         width: 27%;
-        padding: 0.5%;
+        padding: .5%;
         text-align: center;
     }
 
@@ -920,7 +920,7 @@ ul.share-buttons .sr-only {
 @media (min-width: 1366px) {
     .time {
         width: 18%;
-        font-size: 0.85em;
+        font-size: .85em;
         padding: 1%;
     }
 }
@@ -931,13 +931,12 @@ ul.share-buttons .sr-only {
     display: none;
     position: fixed;
     z-index: 1;
-/ padding-top: 100 px;
+    padding-top: 100px;
     left: 0;
     top: 0;
     width: 100%;
     height: 100%;
     overflow: auto;
-    background-color: rgb(0, 0, 0);
     background-color: rgba(0, 0, 0, 0.4);
 }
 
@@ -953,15 +952,16 @@ ul.share-buttons .sr-only {
     text-align: center;
     border: solid 1px #79687a;
     border-radius: 2%;
-    background: linear-gradient(to left, #bb8b8b, #e1a8a8, rgba(238, 178, 178, 0.8));
+    background: linear-gradient(to left, #bb8b8b, #e1a8a8, #EEB2B2);
+    opacity: .9;
     font-size: 3.8em;
     color: #442f2f;
-    text-shadow: #400b55 0 0.5px 0.5px;
+    text-shadow: #400b55 0 .5px .5px;
 }
 
 .close {
     margin-top: -7%;
-    color: #aaaaaa;
+    color: #AAA;
     float: right;
     font-size: 2em;
     font-weight: bold;
@@ -992,13 +992,13 @@ ul.share-buttons .sr-only {
     padding: 0 5%;
     border: solid 1px #928193;
     background: linear-gradient(to left, #a57d7b, #877988, #928193);
-    border-radius: 0.2%;
+    border-radius: .2%;
 }
 
 #menu-food,
 #menu-drink {
     text-align: center;
-    color: white;
+    color: #FFF;
     text-shadow: #400b55 0 1.5px 1px;
 }
 
@@ -1013,10 +1013,10 @@ ul.share-buttons .sr-only {
 .dishes,
 .name-drinks {
     list-style: none;
-    font-size: 0.9em;
+    font-size: .9em;
     font-weight: bold;
     color: #3a2929;
-    text-shadow: #f0daf1 0 0.2px 0.2px;
+    text-shadow: #f0daf1 0 .2px .2px;
 }
 
 .food-price,
@@ -1024,7 +1024,7 @@ ul.share-buttons .sr-only {
     list-style: none;
     color: #f3dbf4;
     text-shadow: #400b55 0 1.5px 1px;
-    font-size: 0.65em;
+    font-size: .65em;
 }
 
 .name-drinks,
@@ -1034,7 +1034,7 @@ ul.share-buttons .sr-only {
 }
 
 .drink-price {
-    font-size: 0.8em;
+    font-size: .8em;
 
 }
 
@@ -1046,7 +1046,7 @@ ul.share-buttons .sr-only {
     }
 
     #footer {
-        font-size: 0.89em;
+        font-size: .89em;
     }
 }
 
@@ -1074,7 +1074,7 @@ ul.share-buttons .sr-only {
     text-align: center;
     border: solid 1px #928193;
     background: linear-gradient(to left, #a57d7b, #877988, #928193);
-    border-radius: 0.7%;
+    border-radius: .7%;
 }
 
 input,
@@ -1095,7 +1095,7 @@ input[type="submit"] {
     margin: 1em 2em;
     border: solid 1px #79687a;
     background: linear-gradient(to left, #7f5e5e, #635764, #635564);
-    color: white;
+    color: #FFF;
     font-family: 'Kanit', sans-serif;
     width: 70%;
     cursor: pointer;
@@ -1110,14 +1110,14 @@ input[type="submit"] {
     font-size: 2em;
     font-weight: bold;
     font-family: 'Kanit', sans-serif;
-    color: #FFFFFF;
+    color: #FFF;
     text-shadow: #580c77 0 1px 2px;
 }
 
 .address {
     width: 87%;
     margin: 0 2%;
-    padding: 0.5em;
+    padding: .5em;
     font-family: 'Kanit', sans-serif;
     top: 10%;
     font-size: 1.9em;
@@ -1157,7 +1157,7 @@ input[type="submit"] {
         text-align: center;
         border: solid 1px #928193;
         background: linear-gradient(to left, #a57d7b, #877988, #928193);
-        border-radius: 0.7%;
+        border-radius: .7%;
     }
 
     input,

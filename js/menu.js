@@ -33,7 +33,7 @@ $(document).ready(function () {
         dataType: "xml",
         success: function (xml) {
             $("<h1 id='menu-drink'></h1>").html("Our drinks menu").appendTo("#drink-menu");
-            $(xml).find('drinks').each(function () {
+            $(xml).find('drink').each(function () {
                 var nameDrink = $(this).find('name').text();
                 var drink = $("<li class='name-drinks'></li>").html(nameDrink).appendTo("#second-list");
                 $(this).find('name').each(function () {

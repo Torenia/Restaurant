@@ -1,57 +1,57 @@
 <?xml version="1.0"?>
 <menu>
 
-    <drinks>
+    <drink>
         <name prise="€ 2,00">Coca Cola</name>
-    </drinks>
+    </drink>
 
-    <drinks>
+    <drink>
         <name prise="€ 2,00">Coca Cola Zero</name>
-    </drinks>
+    </drink>
 
-    <drinks>
+    <drink>
         <name prise="€ 1,00">Still Water</name>
-    </drinks>
+    </drink>
 
-    <drinks>
+    <drink>
         <name prise="€ 3,00">Beer</name>
-    </drinks>
+    </drink>
 
-    <drinks>
+    <drink>
         <name prise="€ 3,00">Red Wine</name>
-    </drinks>
+    </drink>
 
-    <drinks>
+    <drink>
         <name prise="€ 3,00">White Wine</name>
-    </drinks>
+    </drink>
 
-    <drinks>
+    <drink>
         <name prise="€ 3,00">Bellini</name>
-    </drinks>
+    </drink>
 
-    <drinks>
+    <drink>
         <name prise="€ 6,10">Fogolar brandy 38.5%</name>
-    </drinks>
+    </drink>
 
-    <drinks>
+    <drink>
         <name prise="€ 5,60">Vin santo tegrino dessert wine</name>
-    </drinks>
+    </drink>
 
-    <drinks>
+    <drink>
         <name prise="€ 3,10">Italian limoncello 29%</name>
-    </drinks>
+    </drink>
 
-    <drinks>
+    <drink>
         <name prise="€ 3,10">Grappa cividina 40%</name>
-    </drinks>
+    </drink>
 
-    <drinks>
+    <drink>
         <name prise="€ 3,65">Amaretto saliza 28%</name>
-    </drinks>
+    </drink>
 
-    <drinks>
+    <drink>
         <name prise="€ 3,95">Tuaca 35%</name>
-    </drinks>
+    </drink>
 
 </menu>
 
