@@ -52,8 +52,8 @@ $("#table-reserve").on("click", reserveTime);
 
 function reserveTime() {
 
-    var x = $("#name").val();
-    var y = $("#phone").val();
+    var name = $("#name").val();
+    var phone = $("#phone").val();
     var checkboxes = document.querySelectorAll('input:checked');
     if (selectedTable == null) {
         $("#response").html("Please select a table and reserve time");
@@ -63,15 +63,15 @@ function reserveTime() {
         $("#response").html("Please reserve time");
         return false;
     }
-    else if ((x == null || x == "") && (y == null || y == "")) {
+    else if ((name == null || name == "") && (phone == null || phone == "")) {
         $("#response").html("Please enter your name and phone number!");
         return false;
     }
-    else if (x == null || x == "") {
+    else if (name == null || name == "") {
         $("#response").html("Please enter your name!");
         return false;
     }
-    else if (y == null || y == "") {
+    else if (phone == null || phone == "") {
         $("#response").html("Please enter your phone number!");
         return false;
     }

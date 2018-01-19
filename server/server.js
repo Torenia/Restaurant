@@ -24,7 +24,7 @@ http.createServer(function (request, res) {
 
     if (request.url.includes("table")) {
         var tableIndex = request.url.split("/")[2];//http://localhost:1337/table/0 -> tableIndex=0
-        var responce = tables[tableIndex]; //tables[0] -> ["10.00-11.00", "11.00-12.00"]
+        var responce = tables[tableIndex]; //tables[0] -> ["10.00-11.00", "11.00-12.00",...]
         res.end(JSON.stringify(responce)); //["10.00-11.00", "11.00-12.00"] convert to JSON
     }
 

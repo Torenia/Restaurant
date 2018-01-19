@@ -42,7 +42,7 @@ $(document).ready(function () {
                     var liPrise = $("<li class='drink-price'></li>").html(priseDrink).appendTo(ulPrise);
                 })
             });
-            reaplyHash();
+            reapplyHash();
         },
         error: function () {
             alert("An error occurred while processing XML file.");
@@ -53,7 +53,7 @@ $(document).ready(function () {
 
 //To go through the anchor link
 
-function reaplyHash() {
+function reapplyHash() {
     if (window.location.hash) {
         var hash = window.location.hash;
         window.location.hash = "";

@@ -12,7 +12,7 @@ $(document).ready(function () {
                 var description = $(this).find('description').text();
                 var paragraphDescription = $("<p></p>").html(description).appendTo("#events");
             });
-            reaplyHash();
+            reapplyHash();
         },
         error: function () {
             alert("An error occurred while processing XML file.");
@@ -23,7 +23,7 @@ $(document).ready(function () {
 
 //To go through the anchor link
 
-function reaplyHash() {
+function reapplyHash() {
     if (window.location.hash) {
         var hash = window.location.hash;
         window.location.hash = "";
